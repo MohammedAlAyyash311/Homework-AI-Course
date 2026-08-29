@@ -501,6 +501,38 @@ a {
    12. TABLET AND MOBILE - 768px AND BELOW
    ========================================================= */
 
+
+.about-section {
+    max-width: 1000px;
+    min-height: 450px;
+    margin: 60px auto;
+    padding: 70px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+    background:
+        linear-gradient(rgba(31, 41, 55, 0.65), rgba(31, 41, 55, 0.65)),
+        url("images/burger-large.jpg") center / cover no-repeat;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.about-text p {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
 @media (max-width: 768px) {
     /* Show the three-line burger icon on smaller screens. */
     .menu-icon {
@@ -516,6 +548,12 @@ a {
         height: 3px;
         background-color: white;
     }
+
+    .about-section {
+    min-height: 400px;
+    margin: 40px 25px;
+    padding: 40px;
+}
 
     /* Hide the navigation links until the checkbox is checked. */
     .nav-links {
@@ -613,6 +651,15 @@ a {
         font-size: 21px;
     }
 
+    .about-section {
+    margin: 30px 20px;
+    padding: 30px 20px;
+}
+
+.about-text h2 {
+    font-size: 30px;
+}
+
     .hero {
         padding: 50px 20px;
     }
@@ -670,4 +717,9 @@ a {
     .contact-form {
         padding: 22px;
     }
+}
+
+.about-section .about-text h2,
+.about-section .about-text p {
+    color: white;
 }
