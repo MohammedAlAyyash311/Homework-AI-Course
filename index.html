@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Burger House | Home</title>
+
+    <!-- Roboto font required by the assignment -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- One shared external stylesheet for every page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="hero-section">
+        <header class="header">
+            <a class="logo" href="index.html">Burger House</a>
+
+            <!--
+                CSS-only burger menu:
+                The checkbox remembers whether the mobile menu is open.
+                The label below is what the user clicks.
+            -->
+            <input type="checkbox" id="menu-toggle">
+
+            <label class="menu-icon" for="menu-toggle" aria-label="Open navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="nav-links" aria-label="Main navigation">
+                <a class="active" href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Fresh burgers made for you</h1>
+
+                <p>
+                    Enjoy handmade burgers prepared with fresh ingredients
+                    and perfectly grilled patties.
+                </p>
+
+                <a class="button" href="menu.html">Order now</a>
+            </div>
+
+            <!--
+                Responsive image:
+                Small screens load burger-small.jpg.
+                Larger screens use burger-large.jpg.
+            -->
+            <picture class="hero-image">
+                <source
+                    media="(max-width: 600px)"
+                    srcset="images/burger-small.jpg"
+                >
+
+                <img
+                    src="images/burger-large.jpg"
+                    alt="A freshly prepared cheeseburger"
+                >
+            </picture>
+        </div>
+    </section>
+
+    <main>
+        <section class="popular">
+            <h2>Our popular choices</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <img
+                        src="images/classic-burger.jpg"
+                        alt="Classic burger"
+                    >
+                    <h3>Classic Burger</h3>
+                    <p>Beef, cheese, lettuce and tomato.</p>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="images/chicken-burger.jpg"
+                        alt="Chicken burger"
+                    >
+                    <h3>Chicken Burger</h3>
+                    <p>Crispy chicken with our special sauce.</p>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="images/double-burger.jpg"
+                        alt="Double burger"
+                    >
+                    <h3>Double Burger</h3>
+                    <p>Two beef patties with melted cheese.</p>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="images/veggie-burger.jpg"
+                        alt="Vegetarian burger"
+                    >
+                    <h3>Veggie Burger</h3>
+                    <p>A vegetable patty with fresh toppings.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="quote">
+            <blockquote>
+                The burgers were fresh, delicious and full of flavor.
+                I will definitely order again!
+            </blockquote>
+
+            <p>— Happy Customer</p>
+        </section>
+
+        <section class="call-to-action">
+            <div>
+                <h2>Hungry? It’s burger time!</h2>
+                <p>Choose your favorite burger and order today.</p>
+            </div>
+
+            <a class="outline-button" href="menu.html">View menu</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Burger House</p>
+    </footer>
+
+</body>
+</html>

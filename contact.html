@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Burger House | Contact</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="hero-section page-top">
+        <header class="header">
+            <a class="logo" href="index.html">Burger House</a>
+
+            <input type="checkbox" id="menu-toggle">
+
+            <label class="menu-icon" for="menu-toggle" aria-label="Open navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a class="active" href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <div class="page-intro">
+            <h1>Contact Us</h1>
+            <p>Have a question or want to place an order? Send us a message.</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-details">
+                <h2>Visit or message us</h2>
+
+                <div class="contact-item">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+260976053109">+260 976 053 109</a></p>
+                    <p><a href="tel:+260966113724">+260 966 113 724</a></p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://wa.me/260976053109">+260 976 053 109</a></p>
+                    <p><a href="https://wa.me/260966113724">+260 966 113 724</a></p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@greenfieldyouthfoundation.org">info@greenfieldyouthfoundation.org</a></p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Address</h3>
+                    <p>29 Nyimba Crescent, Kansenshi,<br>Ndola, Zambia, 10101</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Opening hours</h3>
+                    <p>Monday - Saturday: 08:00 hrs - 21:00 hrs</p>
+                    <p>(8:00 AM - 9:00 PM)</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Social media</h3>
+                    <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61578887495657" target="_blank" rel="noopener noreferrer">Verde Campo Youth Foundation</a></p>
+                </div>
+            </div>
+
+            <!--
+                This is a front-end demo form only.
+                No JavaScript is used, because JavaScript is not allowed in the assignment.
+            -->
+            <form class="contact-form" action="#" method="post">
+                <h2>Send a message</h2>
+
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="message">Your message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Tell us what you would like to order" required></textarea>
+
+                <button class="button form-button" type="submit">Send message</button>
+                <p class="form-note">Demo form for the class assignment. It does not send data anywhere.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Burger House</p>
+    </footer>
+
+</body>
+</html>
