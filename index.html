@@ -6,78 +6,72 @@
 
     <title>Burger House | Home</title>
 
-    <!-- Roboto font required by the assignment -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;800&display=swap"
         rel="stylesheet"
     >
 
-    <!-- One shared external stylesheet for every page -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <section class="hero-section">
-        <header class="header">
-            <a class="logo" href="index.html">Burger House</a>
+    <header class="header">
+        <a class="logo" href="index.html">Burger House</a>
 
-            <!--
-                CSS-only burger menu:
-                The checkbox remembers whether the mobile menu is open.
-                The label below is what the user clicks.
-            -->
-            <input type="checkbox" id="menu-toggle">
+        <input type="checkbox" id="menu-toggle">
 
-            <label class="menu-icon" for="menu-toggle" aria-label="Open navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
+        <label
+            class="menu-icon"
+            for="menu-toggle"
+            aria-label="Open navigation menu"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
 
-            <nav class="nav-links" aria-label="Main navigation">
-                <a class="active" href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </header>
-
-        <div class="hero">
-            <div class="hero-text">
-                <h1>Fresh burgers made for you</h1>
-
-                <p>
-                    Enjoy handmade burgers prepared with fresh ingredients
-                    and perfectly grilled patties.
-                </p>
-
-                <a class="button" href="menu.html">Order now</a>
-            </div>
-
-            <!--
-                Responsive image:
-                Small screens load burger-small.jpg.
-                Larger screens use burger-large.jpg.
-            -->
-            <picture class="hero-image">
-                <source
-                    media="(max-width: 600px)"
-                    srcset="images/burger-small.jpg"
-                >
-
-                <img
-                    src="images/burger-large.jpg"
-                    alt="A freshly prepared cheeseburger"
-                >
-            </picture>
-        </div>
-    </section>
+        <nav class="nav-links" aria-label="Main navigation">
+            <a class="active" href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
     <main>
-        <section class="popular">
+
+        <div class="hero-section">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Fresh burgers made for you</h1>
+
+                    <p>
+                        Enjoy handmade burgers prepared with fresh ingredients
+                        and perfectly grilled patties.
+                    </p>
+
+                    <a class="button" href="menu.html">Order now</a>
+                </div>
+
+                <picture class="hero-image">
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="images/burger-small.jpg"
+                    >
+
+                    <img
+                        src="images/burger-large.jpg"
+                        alt="A freshly prepared cheeseburger"
+                    >
+                </picture>
+            </div>
+        </div>
+
+        <div class="popular">
             <h2>Our popular choices</h2>
 
             <div class="cards">
@@ -117,25 +111,28 @@
                     <p>A vegetable patty with fresh toppings.</p>
                 </article>
             </div>
-        </section>
+        </div>
 
-        <section class="quote">
+        <div class="quote">
             <blockquote>
                 The burgers were fresh, delicious and full of flavor.
                 I will definitely order again!
             </blockquote>
 
             <p>— Happy Customer</p>
-        </section>
+        </div>
 
-        <section class="call-to-action">
+        <div class="call-to-action">
             <div>
                 <h2>Hungry? It’s burger time!</h2>
                 <p>Choose your favorite burger and order today.</p>
             </div>
 
-            <a class="outline-button" href="menu.html">View menu</a>
-        </section>
+            <a class="outline-button" href="menu.html">
+                View menu
+            </a>
+        </div>
+
     </main>
 
     <footer class="footer">
