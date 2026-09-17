@@ -38,13 +38,13 @@
             <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
             <a href="about.html">About</a>
-            <a class="active" href="contact.html">Contact</a>
+           <a class="active" href="contact.html" aria-current="page">Contact</a>
         </nav>
     </header>
 
     <main>
 
-        <div class="hero-section page-top">
+         <header class="hero-section page-top">
             <div class="page-intro">
                 <h1>Contact Us</h1>
                 <p>
@@ -52,11 +52,11 @@
                     Send us a message.
                 </p>
             </div>
-        </div>
+        </header>
 
         <div class="contact-section">
-            <div class="contact-details">
-                <h2>Visit or message us</h2>
+           <section class="contact-details">
+               <h2>Visit or message us</h2>
 
                 <div class="contact-item">
                     <h3>Phone</h3>
@@ -121,10 +121,14 @@
                         </a>
                     </p>
                 </div>
-            </div>
-
-            <form class="contact-form" action="#" method="post">
-                <h2>Send a message</h2>
+            </section>
+                      <form
+                class="contact-form"
+                action="#"
+                method="post"
+                aria-labelledby="contact-form-heading"
+            >
+                <h2 id="contact-form-heading">Send a message</h2>
 
                 <label for="name">Your name</label>
                 <input
